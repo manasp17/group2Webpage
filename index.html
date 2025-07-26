@@ -1,55 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team Bio</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Team Bio – Final Project</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
 <header>
-    <h1>Meet Our Team</h1>
-    <!-- Example team logo -->
-    <img src="img/team-logo.png" alt="Team Logo" class="team-logo">
+  <h1>Meet Our Team – The Debuggers</h1>
+  <!-- Replace this with your real logo -->
+  <img src="img/team-logo.png" alt="Team Logo" class="team-logo" />
 
-    <!-- Navigation menu to switch between sections -->
-    <nav>
-        <button onclick="showSection('bios')">Team Bios</button>
-        <button onclick="showSection('vision')">Team Vision</button>
-    </nav>
+  <nav>
+    <button onclick="showSection('bios')">Team Bios</button>
+    <button onclick="showSection('vision')">Team Vision</button>
+  </nav>
 </header>
 
-<!-- Team bios section (default section) -->
+<!-- Team Bios -->
 <div id="bios" class="container">
-    <!-- Each card represents an individual team member -->
-    <div class="card">
-        <h2>John Doe</h2>
-        <p>Frontend Developer</p>
-        <button onclick="toggleBio('bio1')">Show Bio</button>
-        <p id="bio1" class="bio">John is a skilled frontend developer with 5 years of experience in creating responsive web applications.</p>
+  <!-- Manas -->
+  <div class="card manas-card">
+    <h2>Manas</h2>
+    <p>Frontend Developer</p>
+    <img src="manaspic.jpeg" alt="Manas Avatar" class="avatar" />
+    <button onclick="toggleBio('bio1')">Show Bio</button>
+    <p id="bio1" class="bio">
+      Manas is passionate about creating clean, responsive UIs with HTML, CSS, and React.
+      <br/><strong>Moodboard:</strong>
+    </p>
+    <div class="moodboard">
+      <img src="img/js-logo.png" alt="JS" class="mood-img" />
+      <img src="img/react-logo.png" alt="React" class="mood-img" />
+
     </div>
-    <div class="card">
-        <h2>Jane Smith</h2>
-        <p>Backend Developer</p>
-        <button onclick="toggleBio('bio2')">Show Bio</button>
-        <p id="bio2" class="bio">Jane is a backend developer specializing in server-side logic and database management.</p>
+  </div>
+
+  <!-- Sai -->
+  <div class="card sai-card">
+    <h2>Sai</h2>
+    <p>Backend Developer</p>
+    <img src="saipic.jpeg" alt="Sai Avatar" class="avatar" />
+    <button onclick="toggleBio('bio2')">Show Bio</button>
+    <p id="bio2" class="bio">
+      Sai focuses on building reliable server-side logic and APIs.
+      <br/><strong>Moodboard:</strong>
+    </p>
+    <div class="moodboard">
+      <img src="img/python-logo.png" alt="Python" class="mood-img" />
+      <img src="img/node-logo.png" alt="Node" class="mood-img" />
+
     </div>
-    <div class="card">
-        <h2>Emily Johnson</h2>
-        <p>UI/UX Designer</p>
-        <button onclick="toggleBio('bio3')">Show Bio</button>
-        <p id="bio3" class="bio">Emily is a UI/UX designer with a passion for creating user-friendly interfaces.</p>
+  </div>
+
+  <!-- Juliana -->
+  <div class="card juliana-card">
+    <h2>Juliana</h2>
+    <p>UI/UX Designer</p>
+    <img src="julianapic.jpeg" alt="Juliana Avatar" class="avatar" />
+    <button onclick="toggleBio('bio3')">Show Bio</button>
+    <p id="bio3" class="bio">
+      Juliana creates visually appealing and intuitive user interfaces.
+      <br/><strong>Moodboard:</strong>
+    </p>
+    <div class="moodboard">
+      <img src="img/figma-logo.png" alt="Figma" class="mood-img" />
+      <img src="img/color-palette.png" alt="Palette" class="mood-img" />
+
     </div>
+  </div>
 </div>
 
-<!-- Team vision/mission statement section (hidden by default) -->
-<div id="vision" class="container" style="display: none;">
-    <h2>Our Mission Statement</h2>
-    <p>We strive to create a collaborative, inclusive, and innovative environment where team members feel empowered to push boundaries and achieve excellence in their craft. Our mission is to deliver high-quality solutions that meet and exceed our clients' expectations.</p>
+<!-- Team Vision -->
+<div id="vision" class="container" style="display:none;">
+  <h2>Our Mission Statement</h2>
+  <p>
+    We are <strong>The Debuggers</strong>: a team that values collaboration, innovation,
+    and continuous improvement. Our goal is to build software that delights users
+    and helps us grow as developers.
+  </p>
+
+  <h3>Team Rules</h3>
+  <ul>
+    <li>Respect each other’s ideas and time.</li>
+    <li>Each member commits code and reviews PRs.</li>
+    <li>Communicate openly and help one another.</li>
+  </ul>
 </div>
 
-<script src="script.js"></script> <!-- Link to external JavaScript file -->
-
+<script src="script.js"></script>
 </body>
 </html>
